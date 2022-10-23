@@ -120,9 +120,8 @@
         </section>
         <!-- <section id="features" class="grey lighten-3"> -->
           <!-- <div class="py-9"></div> -->
-          <section  class="services grey lighten-5">
-            <div id="services" class="container" data-aos="fade-up">
-              
+          <section  class="services grey lighten-5" id="services">
+            <div  class="container" data-aos="fade-up">
               <div class="py-7"></div>
               <div class="section-title">
                 <h1 class="display-2 font-weight-bold mb-3">SERVICES</h1>
@@ -279,16 +278,16 @@
           <a class="experience"  href="./Experience.html#exp">
           <v-container>
             <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Experience</h2>
-            <v-responsive class="mx-auto mb-12" width="56">
+            <v-responsive class="mx-auto mb-12" width="56" style="margin-bottom: 0px!important;">
               <v-divider class="mb-1"></v-divider>
               <v-divider></v-divider>
             </v-responsive>
-            <!-- <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
+            <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
               <b>We at Expoworks have extensive experience in developing strategic plans, feasibility studies, business development, market research, and advertising.
                 Our services are offered to international development agencies, NGOs, the government, and the private sector in Palestine. 
                 Expoworks Plus has consultancy experience and high academic qualifications both international and local experts. Furthermore, we have a large network of field workers covering all areas of the West Bank and Gaza Strip who have been involved in many surveys, business development plans and field studies.
                 </b>
-            </v-responsive> -->
+            </v-responsive>
             <v-row>
               <v-col  v-for="({ src, text, title }, i) in articles" :key="i" cols="12" md="4">
                 <v-img :src="src" class="mb-4 eimg" height="275" max-width="100%"></v-img>
