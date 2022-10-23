@@ -1868,8 +1868,11 @@ color: #e7cc53;
   /* box-shadow: rgba(238, 207, 70, 0.25) 0px 54px 55px, rgba(250, 215, 61, 0.12) 0px -12px 30px, rgba(255, 224, 84, 0.12) 0px 4px 6px, rgba(243, 208, 53, 0.17) 0px 12px 13px, rgba(255, 219, 56, 0.09) 0px -3px 5px; */
 }
 
-
 *::selection {
   background: #c8b046;
   color: #FFFFFF;
+}
+
+.hide{
+  visibility: hidden;
 }
