@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <title>ExpoWorks+</title>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-  <link rel="shortcut icon"
-  href="./assets/img/XB.png">
-
+  <link rel="shortcut icon" href="./assets/img/XB.png">
   <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -26,20 +19,17 @@
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
-    
+    <title>Home - ExpoWorks+</title>
   </head>
-  
   <body>
-
+    <!--HEADER-->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
         
         <h1 class="logo mr-auto"> 
-           <a href="./index.html"> <img contain max-height="100%"
+          <a href="./index.html"> <img contain max-height="100%"
                             src="./assets/img/ExpoWhiteLogo.jpg">
                         </img>
                       </a> 
@@ -47,25 +37,26 @@
           </h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-          
+          <!-- NAVIGATION BAR -->
           <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li class="active"><a href="#xxx">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li ><a href="./Experience.html">Experience</a></li>
+                <li ><a href="#experience">Experience</a></li>
+                <li ><a href="./Experience.html">Projects</a></li>
                 <li><a href="./Clients.html">Clients</a></li>
+                <li><a href="./Partners.html">Partners</a></li>
               <li><a href="#footer">contact us</a></li>
             </ul>
           </nav><!-- .nav-menu -->
-          
         </div>
       </header>
-      
+      <!--MAIN -->
       <div id="app">
         <v-app>
         <v-content>
         <section id="xxx">
-      <v-row no-gutters>
+          <v-row no-gutters>
             <v-img :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
               src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80">
               <v-theme-provider dark>
@@ -78,17 +69,13 @@
                         class="font-weight-light">
                         WELCOME TO
                       </span>
-
                       <br>
-
                       <!-- <span :class="[$vuetify.breakpoint.smAndDown ? 'display-3': 'display-4']" -->
                       <span style="font-size: 70px; font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;"
                         class="name">
                         E<span class="gold"><img width="50px" src="./assets/img/X Copy.png"></span>poWorks<span class="gold">+</span>
                       </span>
-
                     </v-col>
-
                     <v-btn class="align-self-end" fab outlined @click="$vuetify.goTo('#about-me')">
                       <v-icon>mdi-chevron-double-down</v-icon>
                     </v-btn>
@@ -133,7 +120,6 @@
         </section>
         <!-- <section id="features" class="grey lighten-3"> -->
           <!-- <div class="py-9"></div> -->
-          
           <section  class="services grey lighten-5">
             <div id="services" class="container" data-aos="fade-up">
               
@@ -288,23 +274,21 @@
             </v-container>
           </v-parallax>
         </section>
-        <section  class="experience" >
+        <section  class="experience" id="experience">
           <!-- <div class="py-12"></div> -->
           <a class="experience"  href="./Experience.html#exp">
           <v-container>
             <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Experience</h2>
             <v-responsive class="mx-auto mb-12" width="56">
               <v-divider class="mb-1"></v-divider>
-              
               <v-divider></v-divider>
             </v-responsive>
-            <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
+            <!-- <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
               <b>We at Expoworks have extensive experience in developing strategic plans, feasibility studies, business development, market research, and advertising.
                 Our services are offered to international development agencies, NGOs, the government, and the private sector in Palestine. 
                 Expoworks Plus has consultancy experience and high academic qualifications both international and local experts. Furthermore, we have a large network of field workers covering all areas of the West Bank and Gaza Strip who have been involved in many surveys, business development plans and field studies.
-                
                 </b>
-            </v-responsive>
+            </v-responsive> -->
             <v-row>
               <v-col  v-for="({ src, text, title }, i) in articles" :key="i" cols="12" md="4">
                 <v-img :src="src" class="mb-4 eimg" height="275" max-width="100%"></v-img>
@@ -321,14 +305,12 @@
           </v-container>
         </a>
 </section>
-
-            <!-- <template>
-            <v-btn block elevation="24"  x-large> 
-            Our Projects
-            </v-btn>
-            </template> -->
+          <!-- <template>
+          <v-btn block elevation="24"  x-large> 
+          Our Projects
+          </v-btn>
+          </template> -->
           <br>
-
           <!-- <div class="py-12"></div>
         </section>
 
